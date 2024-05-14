@@ -2,6 +2,7 @@
 let carrito = [];
 let total = 0;
 let pedidoNumero = Math.floor(Math.random() * 1000) + 1; // Genera un número aleatorio entre 1 y 1000 para el pedido
+let nombreApellido;
 
 // Constantes
 const PRODUCTOS = [
@@ -92,11 +93,11 @@ function verCarrito() {
     return;
   }
 
-  let mensaje = "Carrito de compras:\n";
+  let mensaje = "Carrito de compras:\n\n";
   carrito.forEach((producto, index) => {
-    mensaje += `${index + 1}. ${producto.nombre} - $${producto.precio}\n`;
+    mensaje += `${producto.nombre} - $${producto.precio}\n`;
   });
-  mensaje += `Total: $${total}\n\n¿Qué desea hacer?\n\n1. Pagar\n2. Vaciar carrito\n0. Cancelar pedido`;
+  mensaje += `Total: $${total}\n\n¿Qué deseas hacer?\n1. Pagar\n2. Vaciar carrito\n0. Cancelar pedido`;
 
   let opcion = prompt(mensaje);
   switch (opcion) {
@@ -123,8 +124,8 @@ function vaciarCarrito() {
 
 // Función para procesar el pedido
 function procesarPedido() {
-  let nombreApellido = prompt("Ingrese su nombre y apellido:");
-  let dni = prompt("Ingrese su DNI:");
+  nombreApellido = prompt("Ingresa tu nombre y apellido:");
+  let dni = prompt("Ingresa tu DNI:");
 
   alert(`Pedido N°${pedidoNumero}\n\nDatos del pedido:\nNombre y apellido: ${nombreApellido}\nDNI: ${dni}\n\nSelecciona un método de pago:`);
 
@@ -166,7 +167,7 @@ function procesarPago(tipoTarjeta) {
     codigoSeguridad === DATOS_PAGO.codigoSeguridad &&
     dniTitular === DATOS_PAGO.dniTitular
   ) {
-    alert(`Tu pago fue procesado correctamente\nGracias por tu compra!\nTe esperamos mañana después de las 9:00 hs para retirar tu pedido\nRecuerda llevar el N° de pedido para retirar: ${pedidoNumero}`);
+    alert(`Tu pago fue procesado correctamente\n ${nombreApellido} Gracias por tu compra!\nTe esperamos mañana después de las 9:00 hs para retirar tu pedido\nRecuerda llevar el N° de pedido para retirar: ${pedidoNumero}`);
     // Vaciar el carrito
   carrito = [];
   total = 0;
@@ -176,8 +177,8 @@ function procesarPago(tipoTarjeta) {
 }
 
 // Función para pagar al retirar
-function pagarAlRetirar(pedidoNumero) {
-  alert(`Gracias por tu compra! Mañana después de las 9:00 hs tu pedido estará listo para retirar. Recuerda llevar el N° de pedido para retirar: ${pedidoNumero}`);
+function pagarAlRetirar() {
+  alert(` ${nombreApellido} Gracias por tu compra! Mañana después de las 9:00 hs tu pedido estará listo para retirar.\n Recuerda llevar el N° de pedido para retirar: ${pedidoNumero}`);
   // Vaciar el carrito
   carrito = [];
   total = 0;
@@ -204,5 +205,3 @@ function ejecutarPrograma() {
   } while (opcion !== "0");
 }
 
-// Ejecutar el programa al cargar la página
-ejecutarPrograma();
