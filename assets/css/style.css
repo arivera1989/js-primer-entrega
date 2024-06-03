@@ -2,6 +2,11 @@ body {
     background: rgb(221, 221, 221);
 }
 
+.logo {
+    margin-top: -30px;
+    width: 200px;
+}
+
 .card-product {
     margin-bottom: 20px;
 }
@@ -11,9 +16,6 @@ body {
     object-fit: cover;
 }
 
-.btn-success {
-    margin-bottom: 20px;
-}
 
 .floating-btn {
     position: fixed;
