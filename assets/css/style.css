@@ -1,0 +1,23 @@
+body {
+    background: rgb(221, 221, 221);
+}
+
+.card-product {
+    margin-bottom: 20px;
+}
+
+.card-product img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-success {
+    margin-bottom: 20px;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
