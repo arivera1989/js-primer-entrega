@@ -1,0 +1,12 @@
+[
+    { "nombre": "Camisa Estampada", "descripcion": "Negra con estampas en gris. Talle Unico", "precio": 11999, "imagen": "./assets/image/camisa.webp", "stock": 10 },
+    { "nombre": "Remera algodón", "descripcion": "Blanca con estampa negra 'Actitud'", "precio": 7399, "imagen": "./assets/image/remera_algodon.webp", "stock": 5 },
+    { "nombre": "Remera Jersey", "descripcion": "Color tiza, lisa. Talle Unico", "precio": 7399, "imagen": "./assets/image/rem_jersey.webp", "stock": 0 },
+    { "nombre": "Pantalón Jean", "descripcion": "Negro, entallado, chupin. Talle Unico", "precio": 16999, "imagen": "./assets/image/pant_jean.webp", "stock": 8 },
+    { "nombre": "Pantalón Gabardina", "descripcion": "Verde militar, cargo. Talle Unico", "precio": 18299, "imagen": "./assets/image/pant_gabardina.webp", "stock": 15 },
+    { "nombre": "Zapato de vestir casual", "descripcion": "Acordonado, cuero brillante, cuero vacuno", "precio": 4999, "imagen": "./assets/image/zapato.webp", "stock": 7 },
+    { "nombre": "Zapatilla Dc Pensford", "descripcion": "SS Le botita, con abrojo", "precio": 34999, "imagen": "./assets/image/zapatilla.webp", "stock": 0 },
+    { "nombre": "Gorra Trucker ajustable", "descripcion": "Modelo sin eleccion, segun disponibilidad", "precio": 10499, "imagen": "./assets/image/gorra.webp", "stock": 20 },
+    { "nombre": "Cinturón de vestir", "descripcion": "Negro, cuero, 3.5 cms de ancho, 85 al 115", "precio": 9249, "imagen": "./assets/image/cinturon_cuero.webp", "stock": 3 }
+  ]
+  
